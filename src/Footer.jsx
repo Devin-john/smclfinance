@@ -2,6 +2,9 @@ import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import { Facebook, Twitter, Instagram, Linkedin } from "react-bootstrap-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+
+// eslint-disable-next-line jsx-a11y/anchor-is-valid
 
 const Footer = () => {
   return (
@@ -31,7 +34,7 @@ const Footer = () => {
             </p>
             {/* Social Media Icons */}
             <div className="d-flex gap-3 mt-4">
-              <a
+              <Link
                 aria-label="Facebook"
                 className="text-light fs-4"
                 style={{ color: "#fff" }}
@@ -39,8 +42,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Facebook />
-              </a>
-              <a
+              </Link>
+              <Link
                 aria-label="Twitter"
                 className="text-light fs-4"
                 style={{ color: "#fff" }}
@@ -48,8 +51,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Twitter />
-              </a>
-              <a
+              </Link>
+              <Link
                 aria-label="Instagram"
                 className="text-light fs-4"
                 style={{ color: "#fff" }}
@@ -57,8 +60,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Instagram />
-              </a>
-              <a
+              </Link>
+              <Link
                 aria-label="LinkedIn"
                 className="text-light fs-4"
                 style={{ color: "#fff" }}
@@ -66,7 +69,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Linkedin />
-              </a>
+              </Link>
             </div>
           </Col>
 
@@ -79,34 +82,34 @@ const Footer = () => {
               Quick Links
             </h5>
             <Nav className="flex-column">
-              <Nav.Link
-                href="#home"
+              <Link
+                to="/"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
                 Home
-              </Nav.Link>
-              <Nav.Link
-                href="#about"
+              </Link>
+              <Link
+                to="/about"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
                 About Us
-              </Nav.Link>
-              <Nav.Link
-                href="#contact"
+              </Link>
+              <Link
+                to="#contact"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
                 Contact Us
-              </Nav.Link>
-              <Nav.Link
-                href="#loan"
+              </Link>
+              <Link
+                to="#loan"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
                 Need A Loan?
-              </Nav.Link>
+              </Link>
             </Nav>
           </Col>
 
@@ -119,41 +122,41 @@ const Footer = () => {
               Loan Types
             </h5>
             <Nav className="flex-column">
-              <Nav.Link
-                href="#homeloan"
+              <Link
+                to="#homeloan"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
                 Home Loan
-              </Nav.Link>
-              <Nav.Link
-                href="#loanagainstproperty"
+              </Link>
+              <Link
+                to="#loanagainstproperty"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
                 Loan Against Property
-              </Nav.Link>
-              <Nav.Link
-                href="#businessloan"
+              </Link>
+              <Link
+                to="#businessloan"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
                 Business Loan
-              </Nav.Link>
-              <Nav.Link
-                href="#personalloan"
+              </Link>
+              <Link
+                to="#personalloan"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
                 Bill Discounting
 
-              </Nav.Link>
-              <Nav.Link
-                href="#personalloan"
+              </Link>
+              <Link
+                to="#personalloan"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
               >
-              </Nav.Link>
+              </Link>
             </Nav>
           </Col>
 
@@ -166,24 +169,24 @@ const Footer = () => {
               Company
             </h5>
             <Nav className="flex-column">
-              <Nav.Link
-                href="#privacy"
+              <Link
+                to="#privacy"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Privacy Policy
-              </Nav.Link>
-              <Nav.Link
-                href="#terms"
+              </Link>
+              <Link
+                to="#terms"
                 className="px-0"
                 style={{ color: "rgba(255,255,255,0.75)" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Terms of Service
-              </Nav.Link>
+              </Link>
             </Nav>
           </Col>
         </Row>
