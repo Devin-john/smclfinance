@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
 import axios from "axios";
 import { Container, Row, Col, Card, Form, Button, Image } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
